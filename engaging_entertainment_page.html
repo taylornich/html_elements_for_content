@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Engaging Entertainment Page with Multimedia and CSS</title>
+        <link rel="stylesheet" href="multimedia.css">
+    </head>
+    <body>
+        <div class="main-header">
+            <h1>A Visually Engaging Page Linking My Favorite Books</h1>
+        </div>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li><a href="#image-header" class="nav-link">Image Gallery</a></li>
+                <li><a href="#CTA-header" class="nav-link">Where to Find Them</a></li>
+                <li><a href="#feedback" class="nav-link">Feedback Form</a></li>
+            </ul>
+        </nav>
+        <div class="main-page-photo">
+            <img src="https://i.pinimg.com/736x/60/90/2f/60902f228637e04566fdbaddd8c58706.jpg">
+        </div>
+        <section class="gallery">
+            <h1 id="image-header">Image Gallery</h1>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://laceanddaggerbooks.com/wp-content/uploads/2022/02/a-fate-of-wrath-and-flame-1.jpg" alt="A Fate of Wrath and Flame">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://th.bing.com/th/id/OIP.BhIDaFzRdfguK4IsZ_cE6AHaLV?rs=1&pid=ImgDetMain" alt="Kingdoms of Death">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://m.media-amazon.com/images/I/51rpYIsr7ZL._SY445_SX342_.jpg" alt="The Wingspan of Severed Hands">
+                </div>
+            </div>
+        </section>
+        
+        <section class="call-to-action">
+            <h2>Buy the Books</h2>
+            <div class="cta-buttons">
+                <a href="https://www.amazon.com/gp/product/1990105157?ref_=dbs_m_mng_rwt_calw_tpbk_0&storeType=ebooks&qid=1734376282&sr=8-1" class="cta-button">A Fate of Wrath and Flame</a>
+                <a href="https://www.amazon.com/Kingdoms-Death-Eater-Christopher-Ruocchio/dp/075641878X/ref=sr_1_1?adgrpid=1346902853777631&dib=eyJ2IjoiMSJ9.VGBXSZdD9UXX6-OAx_Wt6VHNxtKzEQyEU_AKnhvQDWs_yYz0EOjNjLtD3zrjv76AbrQDSQDcDkCsqAIOfP-0XcIaSa4IToUIHXqMnTf9LXWvXLeEz8NT-JWirUN8EgoZIQ0ahfewOIYH3XfJigJMZyJnqWYaxFM2wcXABWFg3hFXrrcxn4cQUymD2B4-dYdTPaeg6Cv6r_VVzjYA36RXEJsOo6veLe95m3BNVtTkbZw.b_Lycu4kRK0MbpbGo2YZzkP-znttMrOZdew-nKzbDvU&dib_tag=se&hvadid=84181783930357&hvbmt=be&hvdev=c&hvlocphy=78109&hvnetw=o&hvqmt=e&hvtargid=kwd-84182190373257%3Aloc-190&hydadcr=22191_13576477&keywords=kingdoms+of+death&msclkid=645a442afe391d38c20f234a85ac78d7&qid=1734376493&sr=8-1" class="cta-button">Kingdoms of Death</a>
+                <a href="https://www.amazon.com/Wingspan-Severed-Hands-Joanna-Koch/dp/195165806X/ref=sr_1_1?adgrpid=1343604000872716&dib=eyJ2IjoiMSJ9.dGzMOuHRMuqi-Z0XD4aZFg.JDgEZn-ZpDsuXMoseY7Q-ceg5CxvNAeoCy4H_AUzais&dib_tag=se&hvadid=83975358200565&hvbmt=be&hvdev=c&hvlocphy=78109&hvnetw=o&hvqmt=e&hvtargid=kwd-83975757256378%3Aloc-190&hydadcr=2148_10469671&keywords=the+wingspan+of+severed+hands&msclkid=0a124e524db01cb08707293236762ed1&qid=1734376396&sr=8-1" class="cta-button">The Wingspan of Severed Hands</a>
+            </div>
+        </section>
+        <section class="feedback-form">
+            <h2 id="feedback">We Value Your Feedback!</h2>
+            <form action="submit_feedback.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="title">Title of the Book You Read:</label>
+                <input type="text" id="text" name="text" required>
+    
+                <label for="rating">Rating After Reading the Book:</label>
+                <select id="rating" name="rating" required>
+                    <option value="1">1 - Poor</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="3">3 - Good</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="5">5 - Excellent</option>
+                </select>
+    
+                <label for="suggestions">Suggest a Book</label>
+                <input type="text" id="suggestions" name="suggestions">
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" required></textarea>
+    
+                <button type="submit" class="submit-button">Submit Feedback</button>
+            </form>
+        </section>
+    </body>
+</html>

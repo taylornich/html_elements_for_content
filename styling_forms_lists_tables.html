@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Styling Forms, Lists, and Tables</title>
+        <link rel="stylesheet" href="forms_styling.css">
+    </head>
+    <body>
+        <!--Question 2 task 2-->
+        <div class="main content">
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li> <a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <!--Question 2 task 1-->
+            <div class="registration-container">
+                <h1>User Registration Form</h1>
+                <form class="registration-form" action="submit_feedback.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="password">Password</label>
+                    <input type="text" id="password" name="password" required>
+
+                    <button type="submit" class="submit-button">Submit User Information</button>
+                </form>
+            </div>
+
+            <!--Question 2 task 3-->
+            <div class="data-table-container">
+                <h2>Data Table</h2>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID #</th>
+                            <th>Name</th>
+                            <th>Items Bought</th>
+                            <th>Shipping Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Rory Gilmore</td>
+                            <td>Jeans, 2 Blouses, 1 Pair of Shoes</td>
+                            <td>Not Shipped Yet</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Keri Lake</td>
+                            <td>2 Pairs of Shorts</td>
+                            <td>Shipped</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Sam Winchester</td>
+                            <td>Hiking Boots</td>
+                            <td>Shipped</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Clark Kent</td>
+                            <td>1 Cape, 1 Pair Stretchy Pants</td>
+                            <td>Delivered</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
